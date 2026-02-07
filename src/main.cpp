@@ -56,6 +56,7 @@ void fetchStations() {
       }
     } else {
       Serial.printf("[DEBUG] HTTP Error: %d\n", httpCode);
+      Serial.println("[DEBUG] Odpowiedz serwera: " + http.getString());
     }
     http.end();
   }
